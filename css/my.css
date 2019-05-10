@@ -1,0 +1,48 @@
+.left-half {
+  float: left;
+  width: 50%;
+}
+.right-half {
+  float: left;
+  width: 50%;
+}
+
+
+.absoluteblock{
+  position: absolute;
+}
+
+.leftimage{
+  position: absolute;
+  top: 0px;
+  width: 50%;
+  heigth: 100%;
+  text-align: center;
+}
+
+.rightinside{
+  position: absolute;
+  left: 400px;
+  top: 0px;
+  width: 50%;
+  heigth: 100%;
+  text-align: center;
+}
+
+.titulo{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+.relativeblock{
+  position: relative;
+}
+
+.footnote{
+  position: absolute;
+  bottom: 10px;
+  right: 0px;
+  text-align: right;
+}

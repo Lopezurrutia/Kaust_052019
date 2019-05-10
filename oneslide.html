@@ -1,0 +1,87 @@
+<html>
+<head>
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+		<link rel="stylesheet" href="css/my.css">
+		<title>Angel Lopez-Urrutia</title>
+
+
+	</head>
+	<body>
+		<div class="reveal">
+		  <div class="slides">
+
+
+
+
+<!-- -------------------------------- 1.html -----------------------------------------------------		     -->
+<section>
+  <bold><huge>Temperature and <i>Prochlorococcus</i> size</huge></bold>
+		    <!-- <section data-gif="repeat"><img src="assets/fig1.gif" /></section> -->
+  
+  <div class="left-half">		      
+    <img src="images/Prochl_SEM.jpg" />
+  </div>
+  <div class="right-half">		      
+    <img src="images/Flombaum.jpg" />
+  </div>
+
+  
+  <div class="right-half footnote">		      
+    <p class="fragment fade-out">
+    <small>
+      Ángel López-Urrutia<br>
+      Centro Oceanográfico de Gijón<br>
+      Instituto Español de Oceanografía<br>
+    </small>
+    </p>
+  </div>
+
+  <div class="right-half">		      
+    <p class="fragment">
+    <img src="images/team.jpg" />
+    </p>
+    <small>
+      Antonio S. Palacio<br>
+      Laura Alonso-Saez<br>
+      Ana M. Cabello<br>
+      Laurence Garczarek<br>
+      Iñaki Husking and Laura Díaz<br>
+    </small>
+    </p>
+  </div>
+</section>
+
+
+		
+<script>
+  var link = document.createElement( 'link' );
+  link.rel = 'stylesheet';
+  link.type = 'text/css';
+  link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+  document.getElementsByTagName( 'head' )[0].appendChild( link );
+</script>
+
+		<script src="js/reveal.js"></script>
+		<script>
+		  Reveal.addEventListener('slidechanged', function(event) {
+		  var gifAttr = event.currentSlide.getAttribute('data-gif');
+		  if (gifAttr && gifAttr === 'repeat') {
+		  var img = event.currentSlide.querySelector('img');
+		  var gif = img.getAttribute('src');
+		  
+		  img.setAttribute('src', gif + '?t=' + (new Date().getTime()));
+		  }
+		  }, false);
+		  Reveal.configure({
+		  keyboard: {
+		  37: 'prev',
+		  38: 'prev',
+		  39: 'next',
+		  40: 'next'
+		  }
+		  });
+		  Reveal.initialize();
+		</script>
+	</body>
+</html>
