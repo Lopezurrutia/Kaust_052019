@@ -1,0 +1,64 @@
+<html>
+<head>
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+		<link rel="stylesheet" href="css/my.css">
+		<title>Angel Lopez-Urrutia</title>
+
+
+	</head>
+	<body>
+		<div class="reveal">
+		  <div class="slides">
+
+
+<!-- -------------------------------- 4.html ------------------------------------------------>
+<section data-transition="none">
+  <div class="titulo">		      
+  <bold><huge><i>Prochlorococcus</i>: thermal niche </huge></bold>
+  </div>
+  <div class="leftimage">		      
+      <img class="fragment step-fade-in-then-out" data-fragment-index="1" src="images/flombaum2.jpg" />
+      <img class="fragment" data-fragment-index="2" src="images/ecotypes.jpg" />
+  </div>		      
+  <div class="rightimage">		      
+    <img class="fragment " data-fragment-index="1" src="images/Flombaum.png" />
+  </div>
+
+  
+  
+</section>
+
+
+		
+<script>
+  var link = document.createElement( 'link' );
+  link.rel = 'stylesheet';
+  link.type = 'text/css';
+  link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+  document.getElementsByTagName( 'head' )[0].appendChild( link );
+</script>
+
+		<script src="js/reveal.js"></script>
+		<script>
+		  Reveal.addEventListener('slidechanged', function(event) {
+		  var gifAttr = event.currentSlide.getAttribute('data-gif');
+		  if (gifAttr && gifAttr === 'repeat') {
+		  var img = event.currentSlide.querySelector('img');
+		  var gif = img.getAttribute('src');
+		  
+		  img.setAttribute('src', gif + '?t=' + (new Date().getTime()));
+		  }
+		  }, false);
+		  Reveal.configure({
+		  keyboard: {
+		  37: 'prev',
+		  38: 'prev',
+		  39: 'next',
+		  40: 'next'
+		  }
+		  });
+		  Reveal.initialize();
+		</script>
+	</body>
+</html>

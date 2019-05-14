@@ -15,52 +15,41 @@
 <!-- -------------------------------- 1.html -----------------------------------------------------		     -->
 <section>
 <section data-transition="none">
+<!-- <section data-transition="none"> -->
+
+<!-- -------------------------------- 1.html -----------------------------------------------------		     -->
+  <div class="titulo">		      
   <bold><huge><i>Prochlorococcus</i> cell size and temperature</huge></bold>
-  <bold><small>Effects of temperature and the cell-division cycle on the size of the marine cyanobacterium <i>Prochlorococcus</i> MIT9301 during batch culture. </small></bold>
+  
   
 <p>
-  <div class="left-half">		      
-    <img height="300" width="1050" src="images/Prochl_SEM.jpg" />
+  <div class="leftimage">
+    <div>
+      <small>
+      <span class="fragment" data-fragment-index="1" >600nm</span>
+      <span class="fragment" data-fragment-index="2"> - 0.11 &microm&sup3</span>
+      <span class="fragment" data-fragment-index="4"> - 25 fgC</span>
+      </small>
+
+      <br>
+      <img class="noborder" src="images/pro600.png" />
+    </div>
+    <div>
+      <small>
+      <span class="fragment" data-fragment-index="1" >700nm</span>
+      <span class="fragment" data-fragment-index="2"> - 0.18  &microm&sup3</span>
+      <span class="fragment" data-fragment-index="4"> - 40 fgC</span>
+      <span class="fragment" data-fragment-index="5"> - x1.6 </span>
+      </small>
+      <br>
+      <img class="noborder" src="images/pro700.png" />
+    </div>
+  </div>
+  <div class="fragment rightimage" data-fragment-index="6">		      
+    <img src="images/Flombaum.png" />
   </div>
 
-  <div class="right-half">
-    <p class="fragment step-fade-in-then-out">
-      <img src="images/Light.jpg" />
-    </p>
-    <p class="fragment step-fade-in-then-out">
-    <img src="images/LightPro.jpg" />
-	</p>
-  </div>
 </p>
-
-</section>
-
-<section data-transition="none">
-  <bold><huge><i>Prochlorococcus</i> cell size and temperature</huge></bold>
-  <bold><small>Effects of temperature and the cell-division cycle on the size of the marine cyanobacterium <i>Prochlorococcus</i> MIT9301 during batch culture. </small></bold>
-  
-<p>
-  <div class="right-half">
-    <p class="fragment step-fade-in-then-out">
-      <img src="images/surfer.jpg" />
-    </p>
-    <p class="fragment step-fade-in-then-out">
-    <img src="images/surferProch.jpg" />
-	</p>
-  </div>
-
-  <div class="right-half">
-    <p class="fake">
-      <img src="images/LightPro.jpg" />
-    </p>
-  </div>
-</p>
-
-</section>
-
-
-
-
 
 </section>
 </section>

@@ -7,17 +7,39 @@
   width: 50%;
 }
 
-
+.reveal section img { background:none; border:none; box-shadow:none; }
 .absoluteblock{
   position: absolute;
 }
 
 .leftimage{
   position: absolute;
-  top: 0px;
-  width: 50%;
+  top: 150px;
+  left: 10px;
+  width: 45%;
+  heigth: 100%;
+  text-align: left;
+}
+
+
+.fullimage{
+  position: absolute;
+  top: 150px;
+  left: 10px;
+  width: 80%;
   heigth: 100%;
   text-align: center;
+}
+
+
+
+.rightimage{
+  position: absolute;
+  top: 150px;
+  right: 10px;
+  width: 45%;
+  heigth: 100%;
+  text-align: left;
 }
 
 .rightinside{
@@ -42,7 +64,48 @@
 
 .footnote{
   position: absolute;
-  bottom: 10px;
+  bottom: 100px;
   right: 0px;
   text-align: right;
+}
+
+
+
+.reveal .slides section .fragment.step-fade-in-then-out {
+	opacity: 0;
+	display: none; }
+.reveal .slides section .fragment.step-fade-in-then-out.current-fragment {
+	opacity: 1;
+	display: inline; }
+
+
+
+
+.fake {
+	opacity: 1;
+	display: inline; }
+
+
+
+.reveal.slide .slides > section, .reveal.slide .slides > section > section {
+  min-height: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  position: absolute !important;
+  top: 0 !important;
+  align-items: center !important;
+}
+section > h1, section > h2 {
+  position: absolute !important;
+  top: 0 !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  left: 0 !important;
+  right: 0 !important;
+  text-align: center !important;
+}
+.print-pdf .reveal.slide .slides > section, .print-pdf .reveal.slide .slides > section > section {
+  min-height: 770px !important;
+  position: relative !important;
 }
