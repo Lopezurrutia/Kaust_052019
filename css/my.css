@@ -26,8 +26,8 @@
 .leftlarge{
   position: absolute;
   top: 70px;
-  left: 10px;
-  width: 75%;
+  left: 0px;
+  width: 80%;
   heigth: 100%;
   text-align: left;
 }
