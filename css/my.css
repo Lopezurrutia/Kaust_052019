@@ -22,6 +22,28 @@
 }
 
 
+
+.leftlarge{
+  position: absolute;
+  top: 70px;
+  left: 10px;
+  width: 75%;
+  heigth: 100%;
+  text-align: left;
+}
+
+
+.rightsmall{
+  position: absolute;
+  top: 90px;
+  right: 10px;
+  width: 25%;
+  heigth: 100%;
+  text-align: right;
+}
+
+
+
 .fullimage{
   position: absolute;
   top: 150px;
@@ -41,6 +63,26 @@
   heigth: 100%;
   text-align: left;
 }
+
+.topimage{
+  position: absolute;
+  top: 150px;
+  left: 10px;
+  width: 100%;
+  heigth: 40%;
+  text-align: center;
+}
+
+.bottomimage{
+  position: absolute;
+  top: 350px;
+  left: 10px;
+  width: 100%;
+  heigth: 40%;
+  text-align: center;
+}
+
+
 
 .rightinside{
   position: absolute;
