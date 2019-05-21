@@ -1,6 +1,13 @@
 <html>
 <head>
-		<link rel="stylesheet" href="css/reveal.css">
+<script>
+	var link = document.createElement( 'link' );
+	link.rel = 'stylesheet';
+	link.type = 'text/css';
+	link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+	document.getElementsByTagName( 'head' )[0].appendChild( link );
+</script>
+  <link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/white.css">
 		<link rel="stylesheet" href="css/my.css">
 		<title>Angel Lopez-Urrutia</title>
@@ -17,9 +24,6 @@
 <!-- -------------------------------- 1.html -----------------------------------------------------		     -->
 <section data-transition="none">
 <section data-transition="none">
-<!-- <section data-transition="none"> -->
-
-<!-- -------------------------------- 1.html -----------------------------------------------------		     -->
   <div class="titulo">		      
   <bold><huge><i>Prochlorococcus</i> cell size and temperature</huge></bold>
   <bold><small>Effects of temperature and the cell-division cycle on the size of the marine cyanobacterium <i>Prochlorococcus</i> MIT9301 during batch culture. </small></bold>
@@ -119,7 +123,7 @@
       <small>
       <span class="fragment" data-fragment-index="1" >600nm</span>
       <span class="fragment" data-fragment-index="2"> - 0.11 &microm&sup3</span>
-      <span class="fragment" data-fragment-index="4"> - 25 fgC</span>
+      <span class="fragment" data-fragment-index="2"> - 25 fgC</span>
       </small>
 
       <br>
@@ -129,14 +133,14 @@
       <small>
       <span class="fragment" data-fragment-index="1" >700nm</span>
       <span class="fragment" data-fragment-index="2"> - 0.18  &microm&sup3</span>
-      <span class="fragment" data-fragment-index="4"> - 40 fgC</span>
-      <span class="fragment" data-fragment-index="5"> - x1.6 </span>
+      <span class="fragment" data-fragment-index="2"> - 40 fgC</span>
+      <span class="fragment" data-fragment-index="2"> - x1.6 </span>
       </small>
       <br>
       <img class="noborder" src="images/pro700.png" />
     </div>
   </div>
-  <div class="fragment rightimage" data-fragment-index="6">		      
+  <div class="fragment rightimage" data-fragment-index="4">		      
     <img src="images/Flombaum.png" />
   </div>
 
@@ -212,7 +216,11 @@
   <div class="titulo">		      
   <bold><huge><i>Prochlorococcus</i>: temperature size rule</huge></bold>
   </div>
+  <div class="leftlarge3">		      
+  
        <img src="images/All.png" />
+</div>
+  
 </section>
 
 
@@ -224,13 +232,13 @@
       <bold><small>Experiment I - 2016. </small></bold>
 
   </div>
-  <div class="leftlarge">		      
+  <div class="leftlarge2">		      
       <img class="fragment" data-fragment-index="1" src="images/Exp1_1.png" />
   </div>		      
 
 
 
-  <div class="leftlarge">		      
+  <div class="leftlarge2">		      
       <img class="fragment" data-fragment-index="3" src="images/Exp1.png" />
   </div>		      
 
@@ -290,13 +298,19 @@
    <div class="rightimage fragment step-fade-in-then-out" data-fragment-index="3">		            <img class="fragment" data-fragment-index="1" src="images/VaulotCycle2.png" />
   </div>		      
 
+   <div class="leftimage fragment" data-fragment-index="4">
+     <img src="images/mitosis.png" />
+  </div>		      
 
-   <div class="rightimage fragment" data-fragment-index="4">		            <img height=500 class="fragment" data-fragment-index="1" src="images/gruposciclo.png" />
+   <div class="rightimage fragment" data-fragment-index="4">
+     <img height=500  src="images/ExampleCycle.png" />
+  </div>		      
+   <div class="rightimage fragment" data-fragment-index="5">
+     <img height=500  src="images/ExampleCycle2.png" />
   </div>		      
 
 </section>
 </section>
-
 
 
 
@@ -305,20 +319,21 @@
 
 <!-- -------------------------------- Exp2batch.html ------------------------------------------->
 <section data-transition="none">
-<section data-transition="none">
   <div class="titulo">		      
     <bold><huge><i>Prochlorococcus</i> MIT9301 </huge></bold><br>
       <bold><small>Experiment II - 2018. </small></bold>
 
   </div>
-  <div class="leftlarge">		      
+  <div class="leftlarge2">		      
       <img class="fragment" data-fragment-index="1" src="images/Exp2_1.png" />
-      <img class="fragment" data-fragment-index="4" src="images/chlorella.jpg" />
+  </div>		      
+
+  <div class="leftlarge2">		      
+      <img class="fragment step-fade-in-then-out" data-fragment-index="4" src="images/chlorella.jpg" />
   </div>		      
 
 
-
-  <div class="leftlarge">		      
+  <div class="leftlarge2">		      
       <img class="fragment" data-fragment-index="6" src="images/Exp2.png" />
   </div>		      
   <div class="rightsmall">		      
@@ -330,68 +345,108 @@
   <div class="rightsmall">		      
     <img class="fragment " data-fragment-index="5" src="images/GrowthExp2_3.png" />
   </div>
-  
-  
-</section>
-
-
-
-
-<section data-transition="none">
-  <div class="titulo">		      
-    <bold><huge><i>Prochlorococcus</i> MIT9301 </huge></bold><br>
-      <bold><small>Experiment II - 2018. </small></bold>
-
-  </div>
-
-  <div class="leftlarge">		      
-    <img src="images/TSRFases.png" />
-  </div>
   <div class="rightsmall">		      
-    <img src="images/GrowthExp2_3.png" />
+    <img class="fragment " data-fragment-index="7" src="images/mitosis.png" />
   </div>
   
   
 </section>
-</section>
+
 
 <!-- -------------------------------- 24hour ------------------------------------------------>
 <section data-transition="none">
-<section data-transition="none">
+
   <div class="titulo">		      
     <bold><huge><i>Prochlorococcus</i> MIT9301 </huge></bold><br>
-      <bold><small>24 hour cycle. </small></bold>
-
+    <bold><small>24 hour cycle. </small></bold>
   </div>
-
   <div class="leftlarge fragment step-fade-in-then-out" data-fragment-index="1">
-    <img src="images/ciclo24.png" />
+    <img height=600  src="images/ExampleCycle.png" />
   </div>		      
   <div class="leftlarge fragment step-fade-in-then-out" data-fragment-index="2">
+    <img height=600  src="images/ExampleCycle3.png" />
+  </div>		      
+  <div class="leftlarge fragment step-fade-in-then-out" data-fragment-index="3">
+    <img height=600  src="images/ExampleCycle4.png" />
+  </div>		      
+  <div class="leftlarge fragment step-fade-in-then-out" data-fragment-index="4">
+    <img height=600  src="images/ExampleCycle5.png" />
+  </div>		      
+
+
+
+  <div class="leftlarge fragment step-fade-in-then-out" data-fragment-index="5">
     <img src="images/cicloTSR1_volumen_All.png" />
-  </div>		      
-  <div class="leftlarge fragment" data-fragment-index="3">
-    <img src="images/cicloTSR2_volumen_All.png" />
-  </div>		      
-
-
-
-  <div class="rightsmall fragment" data-fragment-index="4">  
-    <font size="4">
-      <br>
-      <!-- Temp - MinVol - MaxVol - incre <br> -->
-      17ºC - 0.099  -  0.17  - 1.70x <br>
-      26ºC - 0.010  -  0.20  - 2.01x <br>
-      30ºC - 0.007  -  0.16  - 2.09x <br>
-    </font>
-    <img class="fragment" data-fragment-index="5" src="images/mitosis.png" /> 
   </div>
-  
+  <div class="leftlarge fragment" data-fragment-index="6">
+    <img src="images/cicloTSR2_volumen_All.png" />
+    <font size="4">
+      <table style="width:20%">
+	<tr>
+	  <th>Temp</th>
+	  <th>Min vol</th> 
+	  <th>Max vol</th>
+	  <th>Increase</th>
+	</tr>
+	<tr>
+	  <th>17</th>
+	  <th>0.1</th> 
+	  <th>0.17</th>
+	  <th>1.70</th>
+	</tr>
+	<tr>
+	  <th>26</th>
+	  <th>0.1</th> 
+	  <th>0.2</th>
+	  <th>2.01</th>
+	</tr>
+	<tr>
+	  <th>26</th>
+	  <th>0.07</th> 
+	  <th>0.16</th>
+	  <th>2.09</th>
+	</tr>
+	</table>
+    </font>
+  </div>
+
+  <div class="rightsmall">		      
+    <img class="fragment " data-fragment-index="7" src="images/mitosis.png" />
+  </div>
+
+</section>
+
+<section data-transition="none">
+
+<section data-transition="none">
+  <div class="titulo">		      
+    <bold><huge>Temperature size rule </huge></bold><br>
+    <bold><small>The importance of comparing similar life cycle stages. </small></bold>
+  </div>
+  <div class="leftimage" data-fragment-index="1">		      
+    <img height=500 src="images/foxesTSR.png" />
+  </div>
+  <div class="rigthimage fragment step-fade-in-then-out" data-fragment-index="2">		      
+    <img height=500 src="images/foxesTSR2.png" />
+  </div>
+</section>
+
+<section data-transition="none">
+  <div class="titulo">		      
+    <bold><huge>Temperature size rule </huge></bold><br>
+    <bold><small>The importance of comparing similar life cycle stages. </small></bold>
+  </div>
+  <div class="leftimage" >
+    <img src="images/mitosis.png" />
+  </div>
+  <div class="rightimage fragment step-fade-in-then-out" data-fragment-index="2">		      
+    <img  src="images/G1calc.png" />
+  </div>
+  <div class="rightimage fragment step-fade-in-then-out" data-fragment-index="3">		      
+    <img src="images/G1new.png" />
+  </div>
 
 
-
-  
-  
 </section>
 </section>
 
