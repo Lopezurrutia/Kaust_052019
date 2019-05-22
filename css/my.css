@@ -21,6 +21,14 @@
   text-align: left;
 }
 
+.rightimage{
+  position: absolute;
+  top: 150px;
+  right: 10px;
+  width: 45%;
+  heigth: 100%;
+  text-align: left;
+}
 
 
 .leftlarge{
@@ -31,6 +39,9 @@
   heigth: 100%;
   text-align: left;
 }
+
+
+
 
 .leftlarge2{
   position: absolute;
@@ -75,14 +86,6 @@
 
 
 
-.rightimage{
-  position: absolute;
-  top: 150px;
-  right: 10px;
-  width: 45%;
-  heigth: 100%;
-  text-align: left;
-}
 
 .topimage{
   position: absolute;
