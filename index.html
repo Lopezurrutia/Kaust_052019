@@ -1,71 +1,467 @@
+<!doctype html>
 <html>
-<head>
-<script>
-	var link = document.createElement( 'link' );
-	link.rel = 'stylesheet';
-	link.type = 'text/css';
-	link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-	document.getElementsByTagName( 'head' )[0].appendChild( link );
-</script>
-  <link rel="stylesheet" href="css/reveal.css">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/white.css">
-		<link rel="stylesheet" href="css/my.css">
+	<link rel="stylesheet" href="css/mycss.css">
 		<title>Angel Lopez-Urrutia</title>
 
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
 
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
 	</head>
 	<body>
 		<div class="reveal">
-		  <div class="slides">
+			<div class="slides">
 
 
-
-
-<!-- -------------------------------- 1.html -----------------------------------------------------		     -->
+<!-- -------------------------------- FIRST ------------------------------------------------>
 <section data-transition="none">
-  <div class="titulo">		      
-  <bold><huge><i>Prochlorococcus</i> cell size and temperature</huge></bold>
-  <bold><small>Effects of temperature and the cell-division cycle on the size of the marine cyanobacterium <i>Prochlorococcus</i> MIT9301 during batch culture. </small></bold>
-  </div>
 
+  <div class="site">
+    <header class="mastheader">
 
+      <bold><huge><i>Prochlorococcus</i> cell size and temperature</huge></bold>
+      <bold><small>Effects of temperature and the cell-division cycle on the size of the marine cyanobacterium <i>Prochlorococcus</i> MIT9301 during batch culture. </small></bold>
 
-  
-  
-<p>
-  <div class="leftimage">		      
-    <p>
-    <img height="300" width="1050" src="images/Prochl_SEM.jpg" />
-    </p>
-  </div>
-  <div class="rightimage">		      
-    <img src="images/Flombaum.png" />
-  </div>
-</p>
+    </header>
+    
+    <main class="verticalaligned main-content">
+      
+      <!-- <img style="width:200px !important;height:45px !important;" src="images/Prochl_SEM.jpg"/> -->
+      <img style="width:400px !important" src="images/Prochl_SEM.jpg"/>
 
+    </main>
 
-  <div class=" footnote">		      
-    <p class="fragment fade-out">
+    <aside class="verticalaligned sidebar">
 
-    <small>
-      Ángel López-Urrutia<br>
-      Centro Oceanográfico de Gijón<br>
-      Instituto Español de Oceanografía<br>
-    </small>
-    </p>
+      <img src="images/Flombaum.png" />
+      
+    </aside>
 
-    <p class="fragment">
-    <font size="5">
-      “Transcriptomic Experiments on Climate Change Acclimation of Marine Microorganisms"
-    </font>
-    </p>
+    <footer class="footer fragment fade-out current-visible"  data-fragment-index="1">
+      <small>
+	Ángel López-Urrutia<br>
+	Centro Oceanográfico de Gijón. Instituto Español de Oceanografía<br>
+      </small>
+    </footer>
 
     
+
+    <footer class="footer fragment current-visible"  data-fragment-index="2">
+      <small>
+	“Transcriptomic Experiments on Climate Change Acclimation of Marine Microorganisms"
+      </small>
+    </footer>  
+
+
+  </div>
+</section>
+
+
+			  
+<!-- -------------------------------- NIchos.html ------------------------------------------------>
+
+<section data-transition="none">
+  <div class="site">
+    <header class="mastheader">
+      <bold><huge><i>Prochlorococcus</i>: thermal niche and thermal tolerance curves.</huge></bold>
+    </header>
+    
+    <main class="verticalaligned main-content fragment fade-out current-visible"  data-fragment-index="1">
+    </main>
+    <main class="verticalaligned main-content fragment fade-out current-visible"  data-fragment-index="2">
+      <img src="images/flombaum2.jpg" />
+      <!-- <img style="width:200px !important;height:45px !important;" src="images/Prochl_SEM.jpg"/> -->
+    </main>
+
+    <main class="verticalaligned main-content  fragment "  data-fragment-index="3">
+      <img src="images/ecotypes.jpg" />
+    </main>
+
+
+    
+    <aside class="verticalaligned sidebar fragment"  data-fragment-index="2">
+
+      <img src="images/Flombaum.png" />
+      
+    </aside>
+
+
+  </div>
+</section>
+
+
+<!--------------- Bergmanns rule-------------------------------------->
+
+<section data-transition="none">
+<div class="full">
+  <header class="mastheader">
+    <bold><huge>The temperature-size rule</huge></bold><br>
+    <bold><small>
+	Bergmann's rule: Individuals in colder environments grow more slowly but are larger as adults.
+    </small></bold>
+
+  </header>
+  
+  <main class="verticalaligned main-content fragment step-fade-in-then-out current-visible" data-fragment-index="1">
+        <img src="images/fox.jpg" />
+  </main>
+</div>
+</section>
+
+
+
+<!--------------- Temperature size rule-------------------------------------->
+<section data-transition="none">
+  <div class="site">
+    <header class="mastheader">
+      <bold><huge>The temperature-size rule</huge></bold><br>
+      <bold><small>
+	  Ectothermic organisms usually have smaller body size when reared in warmer conditions.
+      </small></bold>
+    </header>
+
+    <main class="verticalaligned main-content fragment"  data-fragment-index="2">
+      <img src="images/foster.jpg" />
+    </main>
+    <aside class="verticalaligned sidebar fragment fade-out current-visible"  data-fragment-index="3">
+      <img src="images/Atkinson1.png" />
+    </aside>
+
+    <aside class="verticalaligned sidebar fragment current-visible"  data-fragment-index="4">
+      <img src="images/Atkinson2.png" />
+    </aside>
+
   </div>
 
 </section>
 
 
+<!--------------- Expt 1 -------------------------------------->
+<section data-transition="none">
+  <div class="bigleft">
+    <header class="mastheader">
+    <bold><huge><i>Prochlorococcus</i> MIT9301 </huge></bold><br>
+      <bold><small>Experiment I - 2016. </small></bold>
+    </header>
+
+    <main class="main-content fragment"  data-fragment-index="1">
+      <img src="images/Exp1_1.png" />
+    </main>
+
+    <main class="main-content fragment"  data-fragment-index="2">
+      <img src="images/Exp1.png" />
+    </main>
+
+    <aside class="verticalaligned sidebar fragment fade-out current-visible"  data-fragment-index="2">
+    <img src="images/GrowthExp1.png" />
+    </aside>
+
+    <aside class="verticalaligned sidebar fragment current-visible"  data-fragment-index="3">
+    <img src="images/GrowthExp1_2.png" />
+    </aside>
+
+  </div>
+
+</section>
+
+
+<section data-transition="none">
+  <div class="bigleft">
+    <header class="mastheader">
+    <bold><huge><i>Prochlorococcus</i> MIT9301 </huge></bold><br>
+      <bold><small>Experiment I - 2016. </small></bold>
+    </header>
+
+    <main class="main-content">
+      <img src="images/Atkinson2.png" />
+    </main>
+
+    <aside class="verticalaligned sidebar">
+    <img src="images/GrowthExp1_3.png" />
+    </aside>
+
+
+  </div>
+
+</section>
+
+
+<!--------------- CEll cycle -------------------------------------->
+
+<section data-transition="none">
+  <div class="site">
+    <header class="mastheader">
+    <bold><huge><i>Prochlorococcus</i> cell-division cycle </huge></bold><br>
+    </header>
+    
+    <main class="verticalaligned main-content fragment"  data-fragment-index="1">
+      <img style="width:400px !important" src="images/Prochl_SEM.jpg"/>
+    </main>
+
+    
+    <aside class="verticalaligned sidebar fragment"  data-fragment-index="2">
+       <img src="images/mitosis2.png" />
+    </aside>
+
+    <aside class="verticalaligned sidebar fragment"  data-fragment-index="3">
+       <img src="images/citofases.png" />
+    </aside>
+
+    <aside class="verticalaligned sidebar fragment"  data-fragment-index="3">
+       <img src="images/citofases.png" />
+    </aside>
+
+    <aside class="verticalaligned sidebar fragment"  data-fragment-index="4">
+       <img src="images/VaulotCycle2.png" />
+    </aside>
+    
+
+  </div>
+</section>
+
+
+<section data-transition="none">
+  <div class="site">
+    <header class="mastheader">
+    <bold><huge><i>Prochlorococcus</i> cell-division cycle </huge></bold><br>
+    </header>
+    
+    <main class="verticalaligned main-content fragment"  data-fragment-index="1">
+     <img src="images/mitosis2.png" />
+    </main>
+
+    
+    <aside class="verticalaligned sidebar fragment"  data-fragment-index="2">
+      <img  src="images/ExampleCycle.png" />
+    </aside>
+  </div>
+</section>
+
+
+<!--------------- Expt 2 batch -------------------------------------->
+<section data-transition="none">
+  <div class="bigleft">
+    <header class="mastheader">
+    <bold><huge><i>Prochlorococcus</i> MIT9301 </huge></bold><br>
+      <bold><small>Experiment II - 2018. </small></bold>
+    </header>
+
+    <main class="main-content fragment"  data-fragment-index="1">
+      <img style="width:1200px !important" src="images/Exp2_1.png" />
+    </main>
+
+    <main class="main-content fragment fade-out current-visible"  data-fragment-index="5">
+      <img src="images/chlorella.jpg"  />
+    </main>
+
+    <main class="main-content fragment fade-out current-visible"  data-fragment-index="6">
+      <img style="width:1200px !important" src="images/Exp2.png"  />
+    </main>
+
+    <aside class="verticalaligned sidebar fragment fade-out current-visible"  data-fragment-index="2">
+    <img src="images/GrowthExp2_1.png" />
+    </aside>
+    <aside class="verticalaligned sidebar fragment fade-out current-visible"  data-fragment-index="3">
+    <img src="images/GrowthExp2_2.png" />
+    </aside>
+    <aside class="verticalaligned sidebar fragment fade-out current-visible"  data-fragment-index="4">
+    <img src="images/GrowthExp2_3.png" />
+    </aside>
+    <aside class="verticalaligned sidebar fragment fade-out current-visible"  data-fragment-index="5">
+    <img src="images/GrowthExp2_3.png" />
+    </aside>
+
+        <aside class="verticalaligned sidebar fragment fade-out current-visible"  data-fragment-index="6">
+    <img src="images/mitosis2.png" />
+    </aside>
+
+  </div>
+
+</section>
+
+<!------------------------ 24 hour ------------------------------------------->
+
+<section data-transition="none">
+  <div class="bigleft">
+    <header class="mastheader">
+    <bold><huge><i>Prochlorococcus</i> MIT9301 </huge></bold><br>
+    <bold><small>24 hour cycle. </small></bold>
+    </header>
+
+    <main class="main-content fragment fade-out current-visible"  data-fragment-index="1">
+    <img  src="images/ExampleCycle.png" />
+    </main>
+
+    <main class="main-content fragment fade-out current-visible"  data-fragment-index="2">
+    <img  src="images/ExampleCycle3.png" />
+    </main>
+    <main class="main-content fragment fade-out current-visible"  data-fragment-index="3">
+    <img  src="images/ExampleCycle4.png" />
+    </main>
+    <main class="main-content fragment fade-out current-visible"  data-fragment-index="4">
+    <img  src="images/ExampleCycle5.png" />
+    </main>
+
+    
+    <aside class="verticalaligned sidebar fragment "data-fragment-index="2">
+    <img src="images/legenda.png" />
+    </aside>
+
+  </div>
+
+</section>
+
+<!------------------------ same phases ------------------------------------------->
+
+<section data-transition="none">
+  <div class="full">
+    <header class="mastheader">
+    <bold><huge><i>Prochlorococcus</i> MIT9301 </huge></bold><br>
+    <bold><small>The importance of comparing similar life cycle stages. </small></bold>
+    </header>
+
+    <main class="main-content">
+    <img class="fragment" data-fragment-index="1" height=800 src="images/foxesTSR.png" />
+    <img class="fragment" data-fragment-index="2" height=800 src="images/foxesTSR2.png" />
+    </main>
+    </div>
+</section>
+
+
+
+<section data-transition="none">
+  <div class="site">
+    <header class="mastheader">
+    <bold><huge><i>Prochlorococcus</i> MIT9301 </huge></bold><br>
+    <bold><small>The importance of comparing similar life cycle stages. </small></bold>
+    </header>
+
+    <main class="main-content">
+    <img src="images/mitosis2.png" />
+    </main>
+
+
+    
+    <aside class="verticalaligned sidebar fragment "data-fragment-index="2">
+    <img  src="images/G1calc.png" />
+    </aside>
+    <aside class="verticalaligned sidebar fragment "data-fragment-index="3">
+    <img  src="images/G1new.png" />
+    </aside>
+
+  </div>
+
+</section>
+
+<!------------------------ SUMMARY ------------------------------------------------>
+<section data-transition="none">
+  <div class="full">
+    <header class="mastheader">
+    <h3>Summary</h3>
+    </header>
+
+    <main class="verticalaligned main-content">
+    <font size="6">
+    <ul>
+      <li class="fragment">The average cell size of <i>Prochlorococcus</i> populations does not follow the temperature size rule</li>
+      <li class="fragment">Unimodal relationship between cell-size and temperature both during exponential and stationary phases</li>
+      <li class="fragment">Increase in size during stationary phase due to cells transitioning to G0</li>
+      <li class="fragment">Evolution of growth rate with time and adaptation to extreme warm temperatures</li>
+      <li class="fragment">Changing temperature size relationships during the 24 hour cycle</li>
+    </ul>
+        </font>
+    </main>
+    
+    </div>
+</section>
+
+<!------------------------ THANKS ------------------------------------------------>
+<section data-transition="none">
+  <div class="full">
+    <header class="mastheader">
+      <bold><huge>
+	  “Transcriptomic Experiments on Climate Change Acclimation of Marine Microorganisms"
+      </huge></bold>
+    </header>
+
+    <main class="verticalaligned main-content">
+    <img  src="images/team.jpg" />
+    </main>
+
+    <footer class="footer">
+      <small>
+      Laura Alonso-Saez<br>
+      Antonio S. Palacio<br>
+      Ana M. Cabello<br>
+      Laurence Garczarek<br>
+      Iñaki Huskin and Laura Díaz<br>
+    </small>
+
+    </footer>  
+    
+    </div>
+</section>
+
+
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.addEventListener('slidechanged', function(event) {
+		  var gifAttr = event.currentSlide.getAttribute('data-gif');
+		  if (gifAttr && gifAttr === 'repeat') {
+		  var img = event.currentSlide.querySelector('img');
+		  var gif = img.getAttribute('src');
+		  
+		  img.setAttribute('src', gif + '?t=' + (new Date().getTime()));
+		  }
+		  }, false);
+		  Reveal.configure({
+		  keyboard: {
+		  37: 'prev',
+		  38: 'prev',
+		  39: 'next',
+		  40: 'next'
+		  }
+		  });
+
+			Reveal.initialize({
+    width: '100%', // ANGEL:Added this two lines so it extends the full width of screen
+    height: '100%',
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+			Reveal.addEventListener( 'slidechanged', function( event ) {
+			Reveal.nextFragment();
+			} );
+		</script>
+	</body>
+</html>
 <!-- <section data-transition="none"> -->
 <!-- <\!-- <section data-transition="none"> -\-> -->
 
@@ -143,24 +539,6 @@
 
 <!-- </p> -->
 <!-- </section> -->
-
-<!-- -------------------------------- NIchos.html ------------------------------------------------>
-<section data-transition="none">
-  <div class="titulo">		      
-  <bold><huge><i>Prochlorococcus</i>: thermal niche and thermal tolerance curves.</huge></bold>
-  </div>
-  <div class="leftimage fragment step-fade-in-then-out" data-fragment-index="1" >		            <img src="images/flombaum2.jpg" />
-  </div>		      
-  <div class="leftimage fragment step-fade-in-then-out" data-fragment-index="2" >		            <img src="images/ecotypes.jpg" />
-  </div>		      
-
-
-  <div class="rightimage">		      
-    <img class="fragment " data-fragment-index="1" src="images/Flombaum.png" />
-  </div>  
-</section>
-
-
 <!-- <section data-transition="none"> -->
 <!--   <div class="titulo">		       -->
 <!--   <bold><huge><i>Prochlorococcus</i>: thermal niche and thermal tolerance curves</huge></bold> -->
@@ -177,36 +555,6 @@
 
 
 
-<!-- -------------------------------- 4.html ------------------------------------------------>
-<section data-transition="none">
-  <div class="titulo">		      
-  <bold><huge>The temperature-size rule</huge></bold>
-  <bold><small>
-      	  <ul>
-	  <li class="fragment step-fade-in-then-out" data-fragment-index="1">Bergmann's rule: Individuals in colder environments grow more slowly but are larger as adults.</li>
-	  <li class="fragment" data-fragment-index="2">Ectothermic organisms usually have smaller body size when reared in warmer conditions.</li>
-	  </ul>
- </small></bold>
-  </div>
-
-  <div class="fullimage">		      
-      <img class="fragment step-fade-in-then-out" data-fragment-index="1" src="images/fox.jpg" />
-  </div>		      
-
-  <div class="leftimage">		      
-      <img class="fragment" data-fragment-index="3" src="images/foster.jpg" />
-  </div>		      
-
-  <div class="rightimage">		      
-      <img class="fragment " data-fragment-index="4" src="images/Atkinson1.png" />
-  </div>		      
-
-  <div class="rightimage">		      
-      <img class="fragment " data-fragment-index="5" src="images/Atkinson2.png" />
-  </div>		      
-</section>
-
-
 <!-- <section data-transition="none"> -->
 <!--   <div class="titulo">		       -->
 <!--   <bold><huge><i>Prochlorococcus</i>: temperature size rule</huge></bold> -->
@@ -219,298 +567,44 @@
 <!-- </section> -->
 
 
-<!-- -------------------------------- Exp1.html ------------------------------------------------>
-<section data-transition="none">
-  <div class="titulo">		      
-    <bold><huge><i>Prochlorococcus</i> MIT9301 </huge></bold><br>
-      <bold><small>Experiment I - 2016. </small></bold>
+<!-- <section data-transition="none"> -->
+<!--   <div class="leftlarge fragment step-fade-in-then-out" data-fragment-index="5"> -->
+<!--     <img src="images/cicloTSR1_volumen_All.png" /> -->
+<!--   </div> -->
+<!--   <div class="leftlarge fragment" data-fragment-index="6"> -->
+<!--     <img src="images/cicloTSR2_volumen_All.png" /> -->
+<!--     <font size="4"> -->
+<!--       <table style="width:20%"> -->
+<!-- 	<tr> -->
+<!-- 	  <th>Temp</th> -->
+<!-- 	  <th>Min vol</th>  -->
+<!-- 	  <th>Max vol</th> -->
+<!-- 	  <th>Increase</th> -->
+<!-- 	</tr> -->
+<!-- 	<tr> -->
+<!-- 	  <th>17</th> -->
+<!-- 	  <th>0.1</th>  -->
+<!-- 	  <th>0.17</th> -->
+<!-- 	  <th>1.70</th> -->
+<!-- 	</tr> -->
+<!-- 	<tr> -->
+<!-- 	  <th>26</th> -->
+<!-- 	  <th>0.1</th>  -->
+<!-- 	  <th>0.2</th> -->
+<!-- 	  <th>2.01</th> -->
+<!-- 	</tr> -->
+<!-- 	<tr> -->
+<!-- 	  <th>26</th> -->
+<!-- 	  <th>0.07</th>  -->
+<!-- 	  <th>0.16</th> -->
+<!-- 	  <th>2.09</th> -->
+<!-- 	</tr> -->
+<!-- 	</table> -->
+<!--     </font> -->
+<!--   </div> -->
 
-  </div>
-  <div class="leftlarge2">		      
-      <img class="fragment" data-fragment-index="1" src="images/Exp1_1.png" />
-  </div>		      
+<!--   <div class="rightsmall">		       -->
+<!--     <img class="fragment " data-fragment-index="7" src="images/mitosis2.png" /> -->
+<!--   </div> -->
 
-
-
-  <div class="leftlarge2">		      
-      <img class="fragment" data-fragment-index="3" src="images/Exp1.png" />
-  </div>		      
-
-  
-  <div class="rightsmall">		      
-    <img class="fragment " data-fragment-index="2" src="images/GrowthExp1.png" />
-  </div>
-  <div class="rightsmall">		      
-    <img class="fragment " data-fragment-index="4" src="images/GrowthExp1_2.png" />
-  </div>
-  
-  
-</section>
-
-
-<section data-transition="none">
-  <div class="titulo">		      
-    <bold><huge><i>Prochlorococcus</i> MIT9301 </huge></bold><br>
-      <bold><small>Experiment I - 2016. </small></bold>
-
-  </div>
-  <div class="leftlarge">		      
-      <img src="images/Atkinson2.png" />
-  </div>		      
-
-  <div class="rightsmall">		      
-    <img  src="images/GrowthExp1_3.png" />
-  </div>
-  
-</section>
-
-
-
-
-<!-- -------------------------------- cell cycle ------------------------------------------------>
-<section data-transition="none">
-  <div class="titulo">		      
-    <bold><huge><i>Prochlorococcus</i> cell-division cycle </huge></bold><br>
-
-  </div>
-  <div class="leftimage">		      
-    <img height="300" width="1050" src="images/Prochl_SEM.jpg" />
-  </div>		      
-
-  <div class="rightimage fragment step-fade-in-then-out" data-fragment-index="1">		            <img class="fragment" data-fragment-index="1" src="images/mitosis2.png" />
-  </div>		      
-
-   <div class="rightimage fragment step-fade-in-then-out" data-fragment-index="2">		            <img class="fragment" data-fragment-index="1" src="images/citofases.png" />
-  </div>		      
-
-   <div class="rightimage fragment step-fade-in-then-out" data-fragment-index="3">		            <img class="fragment" data-fragment-index="1" src="images/VaulotCycle1.png" />
-  </div>		      
-   <div class="rightimage fragment step-fade-in-then-out" data-fragment-index="3">		            <img class="fragment" data-fragment-index="1" src="images/VaulotCycle2.png" />
-  </div>		      
-
-   <div class="leftimage fragment" data-fragment-index="4">
-     <img src="images/mitosis2.png" />
-  </div>		      
-
-   <div class="rightimage fragment" data-fragment-index="4">
-     <img height=500  src="images/ExampleCycle.png" />
-  </div>		      
-  <!--  <div class="rightimage fragment" data-fragment-index="5"> -->
-  <!--    <img height=500  src="images/ExampleCycle2.png" /> -->
-  <!-- </div>		       -->
-
-</section>
-
-
-
-
-
-
-<!-- -------------------------------- Exp2batch.html ------------------------------------------->
-<section data-transition="none">
-  <div class="titulo">		      
-    <bold><huge><i>Prochlorococcus</i> MIT9301 </huge></bold><br>
-      <bold><small>Experiment II - 2018. </small></bold>
-
-  </div>
-  <div class="leftlarge2">		      
-      <img class="fragment" data-fragment-index="1" src="images/Exp2_1.png" />
-  </div>		      
-
-  <div class="leftlarge2">		      
-      <img class="fragment step-fade-in-then-out" data-fragment-index="4" src="images/chlorella.jpg" />
-  </div>		      
-
-
-  <div class="leftlarge2">		      
-      <img class="fragment" data-fragment-index="6" src="images/Exp2.png" />
-  </div>		      
-  <div class="rightsmall">		      
-    <img class="fragment " data-fragment-index="2" src="images/GrowthExp2_1.png" />
-  </div>
-  <div class="rightsmall">		      
-    <img class="fragment " data-fragment-index="3" src="images/GrowthExp2_2.png" />
-  </div>
-  <div class="rightsmall">		      
-    <img class="fragment " data-fragment-index="5" src="images/GrowthExp2_3.png" />
-  </div>
-  <div class="rightsmall">		      
-    <img class="fragment " data-fragment-index="7" src="images/mitosis2.png" />
-  </div>
-  
-  
-</section>
-
-
-<!-- -------------------------------- 24hour ------------------------------------------------>
-<section data-transition="none">
-
-  <div class="titulo">		      
-    <bold><huge><i>Prochlorococcus</i> MIT9301 </huge></bold><br>
-    <bold><small>24 hour cycle. </small></bold>
-  </div>
-  <div class="leftlarge fragment step-fade-in-then-out" data-fragment-index="1">
-    <img height=600  src="images/ExampleCycle.png" />
-  </div>		      
-  <div class="leftlarge fragment step-fade-in-then-out" data-fragment-index="2">
-    <img height=600  src="images/ExampleCycle3.png" />
-  </div>		      
-  <div class="leftlarge fragment step-fade-in-then-out" data-fragment-index="3">
-    <img height=600  src="images/ExampleCycle4.png" />
-  </div>		      
-  <div class="leftlarge fragment step-fade-in-then-out" data-fragment-index="4">
-    <img height=600  src="images/ExampleCycle5.png" />
-  </div>		      
-  <div class="rightsmall">		      
-    <img class="fragment " data-fragment-index="2" src="images/legenda.png" />
-  </div>
-
-
-</section>
-
-
-
-<section data-transition="none">
-  <div class="leftlarge fragment step-fade-in-then-out" data-fragment-index="5">
-    <img src="images/cicloTSR1_volumen_All.png" />
-  </div>
-  <div class="leftlarge fragment" data-fragment-index="6">
-    <img src="images/cicloTSR2_volumen_All.png" />
-    <font size="4">
-      <table style="width:20%">
-	<tr>
-	  <th>Temp</th>
-	  <th>Min vol</th> 
-	  <th>Max vol</th>
-	  <th>Increase</th>
-	</tr>
-	<tr>
-	  <th>17</th>
-	  <th>0.1</th> 
-	  <th>0.17</th>
-	  <th>1.70</th>
-	</tr>
-	<tr>
-	  <th>26</th>
-	  <th>0.1</th> 
-	  <th>0.2</th>
-	  <th>2.01</th>
-	</tr>
-	<tr>
-	  <th>26</th>
-	  <th>0.07</th> 
-	  <th>0.16</th>
-	  <th>2.09</th>
-	</tr>
-	</table>
-    </font>
-  </div>
-
-  <div class="rightsmall">		      
-    <img class="fragment " data-fragment-index="7" src="images/mitosis2.png" />
-  </div>
-
-</section>
-
-<section data-transition="none">
-  <div class="titulo">		      
-    <bold><huge>Temperature size rule </huge></bold><br>
-    <bold><small>The importance of comparing similar life cycle stages. </small></bold>
-  </div>
-  
-  <div class="fullimage">		      
-    <img class="fragment" data-fragment-index="1" height=500 src="images/foxesTSR.png" />
-    <img class="fragment" data-fragment-index="2" height=500 src="images/foxesTSR2.png" />
-  </div>
-</section>
-
-<section data-transition="none">
-  <div class="titulo">		      
-    <bold><huge>Temperature size rule </huge></bold><br>
-    <bold><small>The importance of comparing similar life cycle stages. </small></bold>
-  </div>
-  <div class="leftimage" >
-    <img src="images/mitosis2.png" />
-  </div>
-  <div class="rightimage fragment step-fade-in-then-out" data-fragment-index="2">		      
-    <img  src="images/G1calc.png" />
-  </div>
-  <div class="rightimage fragment step-fade-in-then-out" data-fragment-index="3">		      
-    <img src="images/G1new.png" />
-  </div>
-
-
-</section>
-
-
-<!-- -------------------------------- 24hour --------------------------->
-<section data-transition="none">
-  <div class="titulo">		      
-    <h3>Summary</h3>
-      </div>
-    <font size="6">
-    <ul>
-      <li class="fragment">The average cell size of <i>Prochlorococcus</i> populations does not follow the temperature size rule</li>
-      <li class="fragment">Unimodal relationship between cell-size and temperature both during exponential and stationary phases</li>
-      <li class="fragment">Increase in size during stationary phase due to cells transitioning to G0</li>
-      <li class="fragment">Evolution of growth rate with time and adaptation to extreme warm temperatures</li>
-      <li class="fragment">Changing temperature size relationships during the 24 hour cycle</li>
-    </ul>
-        </font>
-
-</section>
-
-
-<section data-transition="none">
-  <div class="titulo">		      
-    <bold><huge>
-	“Transcriptomic Experiments on Climate Change Acclimation of Marine Microorganisms"</huge></bold>
-    <img height=300 src="images/team.jpg" />
-<br>
-    <small>
-      Laura Alonso-Saez<br>
-      Antonio S. Palacio<br>
-      Ana M. Cabello<br>
-      Laurence Garczarek<br>
-      Iñaki Huskin and Laura Díaz<br>
-    </small>
-  </div>
-
-</section>
-
-
-
-</div>
-		</div>
-		
-<script>
-  var link = document.createElement( 'link' );
-  link.rel = 'stylesheet';
-  link.type = 'text/css';
-  link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-  document.getElementsByTagName( 'head' )[0].appendChild( link );
-</script>
-
-		<script src="js/reveal.js"></script>
-		<script>
-		  Reveal.addEventListener('slidechanged', function(event) {
-		  var gifAttr = event.currentSlide.getAttribute('data-gif');
-		  if (gifAttr && gifAttr === 'repeat') {
-		  var img = event.currentSlide.querySelector('img');
-		  var gif = img.getAttribute('src');
-		  
-		  img.setAttribute('src', gif + '?t=' + (new Date().getTime()));
-		  }
-		  }, false);
-		  Reveal.configure({
-		  keyboard: {
-		  37: 'prev',
-		  38: 'prev',
-		  39: 'next',
-		  40: 'next'
-		  }
-		  });
-		  Reveal.initialize();
-		</script>
-	</body>
-</html>
+<!-- </section> -->

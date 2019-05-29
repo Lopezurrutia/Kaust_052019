@@ -13,22 +13,34 @@
 }
 
 .leftimage{
-  position: absolute;
-  top: 150px;
-  left: 10px;
+  float: left;
   width: 45%;
-  heigth: 100%;
-  text-align: left;
 }
 
 .rightimage{
-  position: absolute;
-  top: 150px;
-  right: 10px;
+  float: left;
   width: 45%;
-  heigth: 100%;
-  text-align: left;
 }
+
+
+/* .leftimage{ */
+/*   position: absolute; */
+/*   top: 150px; */
+/*   left: 10px; */
+/*   width: 45%; */
+/*   heigth: 100%; */
+/*   text-align: left; */
+/* } */
+
+/* .rightimage{ */
+/*   position: absolute; */
+/*   top: 150px; */
+/*   right: 10px; */
+/*   width: 45%; */
+/*   heigth: 100%; */
+/*   text-align: left; */
+/* } */
+
 
 
 .leftlarge{
@@ -40,6 +52,12 @@
   text-align: left;
 }
 
+.twocolumn {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 10px;
+   text-align: left;
+}
 
 
 
